@@ -1,0 +1,52 @@
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 4s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+.filter.drop-shadow-glow {
+  filter: drop-shadow(0 0 0.75rem currentColor);
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #2563eb10 1px, transparent 1px),
+    linear-gradient(to bottom, #2563eb10 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.bg-particle-pattern {
+  background-image: radial-gradient(circle, #2563eb05 1px, transparent 1px);
+  background-size: 30px 30px;
+}
